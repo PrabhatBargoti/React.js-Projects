@@ -7,7 +7,9 @@ const usecounter = ()=>{
         setcount(count + 1)
     }
     const descrease = ()=>{
-        setcount(count - 1)
+        if ( count > 0 ) {
+            setcount(count - 1)
+        }
     }
     const reset = ()=>{
         setcount(0)
